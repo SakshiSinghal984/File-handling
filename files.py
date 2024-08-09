@@ -3,7 +3,7 @@ import pandas as pd
 
 st.subheader("Loading the CSV file")
 df = st.file_uploader("Upload the CSV file : ", type=["csv","xlsx"])
-df = pd.read_csv("C:\\Users\Prakh\OneDrive\Documents\My_Tableau_Repository\Datasources\\vgsales_cleaned.csv")
+df = pd.read_csv("vgsales_cleaned.csv")
 if df is not None:
     st.table(df.head(20))
 
